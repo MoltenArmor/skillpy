@@ -57,7 +57,7 @@ You only need to inform the user whether the final check result passes. If it fa
 2. Locate `main(...)`: it must be decorated with `#sop`.
 3. Read the Docstring of `main(...)`: it must contain a concrete execution flow.
 4. Call other functions step-by-step. By default, pass the output of the previous step directly as the input to the next step. The user may also specify in the `.skillpy` that you should process the output before passing it along.
-5. Continue until the workflow is complete.
+5. Continue until the flow is complete.
 
 ## 6. Source Index
 
