@@ -1,2 +1,2 @@
 # skillpy
-A skill framework for my own use.
+An LLM skill framework for my own use.
