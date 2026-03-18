@@ -1,0 +1,41 @@
+#sop
+def main(precision: int = None):
+    """
+    Execute the main flow in the following order:
+
+    1. Validate inputs: if `precision` is empty, refuse to execute and ask the user to provide one (suggest a few reasonable values).
+    2. Call `run_benchmark(precision)`
+    3. Call `parse_elapsed(output)` with the output from the previous step
+    4. Call `print_report(elapsed)` with the parsed elapsed time
+    """
+    ...
+
+#shell
+def run_benchmark(precision: int):
+    """
+    time bc -l <<< 'scale={precision}; 4 * a(1)'
+    """
+    ...
+
+#sop
+def parse_elapsed(output: str) -> float:
+    """
+    Analyze the raw output and extract the elapsed time that is most meaningful to the user.
+    """
+    ...
+
+#sop
+def print_report(time: float):
+    """
+    Based on the elapsed time, produce output in exactly this format:
+
+    ```
+    ## Your CPU Benchmark Report
+
+    | Metric | Value |
+    |--------|-------|
+    | Elapsed Time | `{elapsed}` sec |
+    | System Rating | {your professional assessment based on the elapsed time}{an emoji that matches the assessment} |
+    ```
+    """
+    ...
